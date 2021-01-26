@@ -22,12 +22,12 @@ while true
   puts "-------------"
   coin_select_result = gets.to_i
 
-  if coin_select_result == 3
+  if coin_select_result == 3 || coin == 0
     puts "またチャレンジしてね！"
     break
   elsif coin < coin_select[coin_select_result]
-    puts "コイン足りません。またチャレンジしましょう！"
-    break
+    puts "コイン足りません。確認してください！"
+    next
   end
 
   puts "エンターを3回押しましょう！" 
