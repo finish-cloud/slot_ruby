@@ -23,10 +23,10 @@ while true
   coin_select_result = gets.to_i
 
   if coin_select_result == 3 || coin == 0
-    puts "またチャレンジしてね！"
+    puts "またチャレンジしてください！"
     break
   elsif coin < coin_select[coin_select_result]
-    puts "コイン足りません。確認してください！"
+    puts "コインが足りません。確認してください！"
     next
   end
 
@@ -73,7 +73,7 @@ while true
     puts "獲得ポイント#{point}"
   else
     puts "-------------"
-    puts "残念！もう一回挑戦しよう！"
+    puts "残念！もう一回挑戦しましょう！"
     coin = coin - coin_select[coin_select_result]
     puts "残りのコイン数：#{coin}"
     puts "獲得ポイント#{point}"
